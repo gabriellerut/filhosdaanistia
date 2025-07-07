@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site oficial do Moto Clube Filhos da Anistia. Conheça nossa história, eventos beneficentes e como fazer parte.">
+    <title>Gallery - Filhos da Anistia</title>
+    <link rel="shortcut icon" href="/imagens/brasao.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 300px;
+            border-radius: 10px;
+            border: 3px solid #a41e1e;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /*Estilização Calendario*/
+
+        table.calendar {
+            height: 50%;
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .calendar th, .calendar td {
+            border: 1px solid #444;
+            padding: 20px 10px;
+            vertical-align: top;
+            height: 100px;
+            position: relative;
+        }
+
+        .calendar th {
+            background-color: #a41e1e;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .calendar td {
+            background-color: #2a2a2a;
+        }
+
+        .day-number {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #aaa;
+        }
+
+        .event {
+            margin-top: 10px;
+            background-color: #a41e1e;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="http:/index.html"><img src="/imagens/brasao.png" class="brasao" alt="Brasão do Moto Clube Filhos da Anistia"></a>
+        <h1>Filhos Da Anistia MC</h1>
+    </header> 
+    <main>
+        <!--Mural de fotos do clube-->
+        <h2>Momentos e Viagens</h2>
+        <article class="gallery">
+            <img src="/imagens/img1.jpg" alt="encontrobeneficente1">
+            <img src="/imagens/img2.jpg" alt="encontrobeneficente 2">
+            <img src="/imagens/img3.jpg" alt="encontrobeneficente 3">
+            <img src="/imagens/img4.jpg" alt="encontrobeneficente 4">
+        </article>
+        <section>
+            <!--Eventos futuros do grupo-->
+            <h2>Eventos</h2>
+            <table class="calendar">
+                <thead>
+                <tr>
+                    <th>Dom</th>
+                    <th>Seg</th>
+                    <th>Ter</th>
+                    <th>Qua</th>
+                    <th>Qui</th>
+                    <th>Sex</th>
+                    <th>Sáb</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td></td><td>1</td><td>2</td><td>3</td><td>4</td>
+                    <td>
+                    <div class="day-number">5</div>
+                    <div class="event">Encontro Regional</div>
+                    </td>
+                    <td>
+                    <div class="day-number">6</div>
+                    <div class="event">Passeio à Serra</div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><div class="day-number">7</div></td>
+                    <td><div class="day-number">8</div></td>
+                    <td><div class="day-number">9</div></td>
+                    <td><div class="day-number">10</div></td>
+                    <td><div class="day-number">11</div></td>
+                    <td><div class="day-number">12</div></td>
+                    <td>
+                    <div class="day-number">13</div>
+                    <div class="event">Churrasco na Sede</div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><div class="day-number">14</div></td>
+                    <td><div class="day-number">15</div></td>
+                    <td><div class="day-number">16</div></td>
+                    <td><div class="day-number">17</div></td>
+                    <td><div class="day-number">18</div></td>
+                    <td><div class="day-number">19</div></td>
+                    <td><div class="day-number">20</div></td>
+                    </tr>
+                    <tr>
+                    <td><div class="day-number">21</div></td>
+                    <td><div class="day-number">22</div></td>
+                    <td><div class="day-number">23</div></td>
+                    <td>
+                    <div class="day-number">24</div>
+                    <div class="event">Reunião mensal</div>
+                    </td>
+                    <td><div class="day-number">25</div></td>
+                    <td><div class="day-number">26</div></td>
+                    <td>
+                    <div class="day-number">27</div>
+                    <div class="event">Viagem a outra cidade</div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><div class="day-number">28</div></td>
+                    <td><div class="day-number">29</div></td>
+                    <td><div class="day-number">30</div></td>
+                    <td><div class="day-number">31</div></td>
+                    <td></td><td></td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site oficial do Moto Clube Filhos da Anistia. Conheça nossa história, eventos beneficentes e como fazer parte.">
+    <title>Fale conosco - Filhos da Anistia</title>
+    <link rel="shortcut icon" href="/imagens/brasao.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+    /*Estlização para melhor preencher o formulário*/
+    .container {
+        background-color: #7f7156;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: auto;
+        box-shadow: 0 0 10px #000;
+    }
+
+    label {
+        padding: 5px;
+        line-height: 20px;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    /*Deixar os campos maiores */
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    button {
+        background-color: #AD3020;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #a41e1e;
+    }
+    </style>
+</head>
+<body>
+    <header> 
+        <a href="http:/index.html"alt="Brasão do Moto Clube Filhos da Anistia"><img src="/imagens/brasao.png" class="brasao"></a>
+        <h1>Filhos Da Anistia MC</h1>
+    </header>
+    <div class="container">
+        <!--Dados da Pessoa-->
+        <h2>Fale com o Moto Clube "Filhos da Anistia"</h2>
+        <p>Envie suas dúvidas, sugestões ou faça sua inscrição.</p>
+        <form action="#" method="post" class="meuFormulario">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" autocomplete="tel"  required placeholder="(xx) x xxxx-xxxx">
+             <!--Motivo do Contato-->
+            <div class="radio-group">
+                <label>Motivo do contato:</label><br>
+                <input type="radio" id="insricao" name="motivo" value="Inscrição">
+                <label for="inscricao">Inscrição</label>
+                <input type="radio" id="duvida" name="motivo" value="Dúvida" required>
+                <label for="duvida">Dúvida</label>
+                <input type="radio" id="sugestao" name="motivo" value="Sugestão">
+                <label for="sugestao">Sugestão</label>
+            </div>
+             <!--Cidade-->
+            <label for="estado">Seu estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione...</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="PR">Paraná</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+             <!--botão para sugestão ou duvidas-->
+            <button type="submit">Enviar Mensagem</button>
+             <!--botão para inscrição-->
+            <button type="button">Seja Membro</button>
+        </form>
+  </div>
+  
+</body>
+</html>

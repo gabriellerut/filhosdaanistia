@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/*Imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&display=swap');
+
+/*Estilização Geral*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --fonte-destaque:"Bebas Neue", sans-serif;
+    --cor1:#E9CDA2;
+    --cor2:#7f7156;
+    --cor3:#0d0c08;
+    --cor4:#a41e1e;
+    --cor5:#031CA0;
+}
+
+html, body {
+    height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+    line-height: 1.6;
+    scroll-behavior: smooth;/*Rolagem suave*/
+    background-color:var(--cor1);
+}
+
+/*Media Queries*/
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        margin: 20px; 
+    }
+    .navegar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .historia, .curiosidades {
+        max-width: 100%;
+        margin: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}
+
+/*Logo site - header*/
+
+.brasao {
+    margin: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    height: auto;
+    width: 100px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: var(--cor2);
+    background-color: var(--cor3);
+}
+
+/*Titulos*/
+
+h1 {
+    font-family: var(--fonte-destaque);
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+    margin: 5px;
+}
+
+h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Menu de Navegação*/
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.navegar {
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-weight: 200;
+    font-size: 30px;
+    color: var(--cor3);
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--cor2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border: 2px solid var(--cor3);
+    cursor: pointer;
+}
+
+.navegar:hover {
+    background-color: var(--cor1);
+    border:2px solid var(--cor2);
+}
+
+/*Conteudo Clube*/
+
+main {
+    padding: 10px;
+}
+
+main img {
+    width: 80%;
+    display: block;
+    margin: auto;   
+}
+
+p {
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.historia, .curiosidades { /*artigos do site*/
+    margin: 0 auto; 
+    max-width: 1000px; 
+    padding: 20px;
+    border: 2px solid var(--cor3);
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.membro { /*Conteiner seja membro*/
+    overflow-x: hidden;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+/*Botão para preencher formúlario*/
+
+.sejamembro {
+    color: var(--cor1);
+    background-color: var(--cor3);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    font-weight: bolder;
+    
+}
+
+.sejamembro:hover{
+    color: var(--cor4) ;
+    transform: scale(1.05);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.cbs { /*esse botão leva direto para o site cbs*/
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--cor3);
+    font-size: bold;
+    font-family: var(--fonte-destaque);
+    font-weight: 400;
+    font-size: 25px;
+}
+.cbs:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
+/*Rodapé*/
+
+footer {
+    color: var(--cor3);
+    background-color: var(--cor2);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer img {
+    height: auto;
+    width: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:active:visited {
+    color: var(--cor3);
+}
